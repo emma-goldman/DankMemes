@@ -17,10 +17,15 @@ class MemesSpider(scrapy.Spider):
         reddit_url = 'https://www.reddit.com/'
         subreddits = [
             'r/dankmemes/',
-            'r/memes/',
-            'r/funny/',
-            'r/harambe/',
+            'r/libertarian/',
+            'r/The_Donald/',
+            'r/CringeAnarchy/',
             'r/dank_meme/',
+            'r/conspiracy/',
+            'r/4chan/'
+            'r/neoconservative/'
+            'r/neoliberal/'
+            'r/MensRights/'
         ]
 
         for subreddit in subreddits:

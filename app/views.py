@@ -30,9 +30,9 @@ app.config['UPLOAD_FOLDER'] = "./tmp"
 g = tf.Graph()
 with g.as_default():
     model = inference_wrapper.InferenceWrapper()
-    restore_fn = model.build_graph_from_config(configuration.ModelConfig(), "/home/andrewliu/im2txt/memesmodel/train")
+    restore_fn = model.build_graph_from_config(configuration.ModelConfig(), "/home/ada/dankm/DankMemes/app/im2txt/memesmodel/train")
 g.finalize()
-vocab = vocabulary.Vocabulary("/home/andrewliu/im2txt/data/memes/word_counts.txt")
+vocab = vocabulary.Vocabulary("/home/ada/dankm/DankMemes/app/im2txt/data/memes/word_counts.txt")
 
 
 def draw_caption(img, text, top=False):
